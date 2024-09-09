@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Instructions Generator</title>
+</head>
+<body>
+    <h1>Generate Testing Instructions from Screenshots</h1>
+    <form id="test-instructions-form">
+        <!-- Textarea for optional context -->
+        <label for="context">Optional Context:</label><br>
+        <textarea id="context" rows="4" cols="50" placeholder="Provide additional context..."></textarea><br><br>
+
+        <!-- File input for screenshots upload -->
+        <label for="screenshots">Upload Screenshots (Required):</label><br>
+        <input type="file" id="screenshots" multiple accept="image/*"><br><br>
+
+        <!-- Button to submit the form -->
+        <button type="submit">Describe Testing Instructions</button>
+    </form>
+
+    <!-- Div to display the generated output -->
+    <div id="output"></div>
+
+    <!-- JavaScript file -->
+    <script src="/static/script.js"></script>
+</body>
+</html>
